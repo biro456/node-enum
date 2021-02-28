@@ -1,0 +1,49 @@
+{
+	"name": "@biro456/enum",
+	"version": "0.0.0",
+	"description": "A typed enum for TypeSript",
+	"license": "MIT",
+	"author": {
+		"name": "Leandro Aguiar",
+		"url": "https://biro456.dev"
+	},
+	"homepage": "https://github.com/biro456/node-enum",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/biro456/node-enum"
+	},
+	"keywords": [
+		"enum",
+		"typescript"
+	],
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"clean": "rimraf -rf .tsc/ build/",
+		"build": "tsc --project tsconfig.build.json",
+		"lint": "eslint --ext .ts .",
+		"test": "jest",
+		"release": "standard-version"
+	},
+	"type": "commonjs",
+	"main": "./build/enum.js",
+	"files": [
+		"./build/"
+	],
+	"devDependencies": {
+		"@jest/globals": "^26.6.0",
+		"@typescript-eslint/eslint-plugin": "^4.0.0",
+		"@typescript-eslint/parser": "^4.0.0",
+		"eslint": "^7.0.0",
+		"eslint-config-airbnb-base": "^14.2.0",
+		"eslint-plugin-import": "^2.22.0",
+		"jest": "^26.6.0",
+		"jest-circus": "^26.6.0",
+		"jest-junit": "^12.0.0",
+		"rimraf": "^3.0.2",
+		"standard-version": "^9.1.1",
+		"ts-jest": "^26.5.0",
+		"typescript": "~4.1.0"
+	}
+}

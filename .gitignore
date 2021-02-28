@@ -1,0 +1,16 @@
+# VS Code
+/.vscode/**
+!/.vscode/extensions.json
+
+# Node
+/node_modules
+
+# Build artifacts
+/build
+
+# Tests
+/coverage
+/test-results
+
+# Logs
+*.log
