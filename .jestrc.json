@@ -9,24 +9,12 @@
 		"^.+\\.ts$": "ts-jest"
 	},
 	"injectGlobals": false,
-	"reporters": [
-		"default",
-		[
-			"jest-junit",
-			{
-				"outputDirectory": "test-results/",
-				"outputName": "jest.xml"
-			}
-		]
-	],
 	"collectCoverage": true,
 	"collectCoverageFrom": [
 		"src/**/*.ts",
 		"!src/**/*.spec.ts"
 	],
-	"coverageDirectory": "coverage/",
 	"coverageReporters": [
-		"text-summary",
-		"lcov"
+		"text-summary"
 	]
 }

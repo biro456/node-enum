@@ -8,9 +8,5 @@
 # Build artifacts
 /build
 
-# Tests
-/coverage
-/test-results
-
 # Logs
 *.log
