@@ -1,7 +1,7 @@
 {
 	"name": "@biro456/enum",
 	"version": "0.0.0",
-	"description": "A typed enum for TypeSript",
+	"description": "A typed enum for TypeScript",
 	"license": "MIT",
 	"author": {
 		"name": "Leandro Aguiar",
