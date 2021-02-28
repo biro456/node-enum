@@ -12,6 +12,9 @@
 		"type": "git",
 		"url": "https://github.com/biro456/node-enum"
 	},
+    "bugs": {
+        "url": "https://github.com/biro456/node-enum/issues"
+    },
 	"keywords": [
 		"enum",
 		"typescript"
