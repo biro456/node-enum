@@ -1,7 +1,7 @@
 # @biro456/enum
 
-[![npm package](https://img.shields.io/npm/v/@biro456/enum?label=npm%20package)](https://www.npmjs.com/package/@biro456/enum)
 [![build status](https://github.com/biro456/node-enum/actions/workflows/build.yml/badge.svg)](https://github.com/biro456/node-enum/actions/workflows/build.yml)
+[![npm package](https://img.shields.io/npm/v/@biro456/enum?label=npm%20package)](https://www.npmjs.com/package/@biro456/enum)
 
 A typed enum for TypeSript.
 
