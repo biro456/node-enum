@@ -1,2 +1,5 @@
-/build
+# Node
 /node_modules
+
+# Build artifacts
+/build

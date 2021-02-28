@@ -1,8 +1,13 @@
 class EnumBase<T extends string> implements Iterable<T> {
-	#variants: ReadonlySet<string>;
+	public readonly variants!: ReadonlySet<string>;
 
 	public constructor(items: T[]) {
-		this.#variants = new Set<T>(items);
+		Object.defineProperty(this, 'variants', {
+			configurable: false,
+			enumerable: false,
+			writable: false,
+			value: new Set(items),
+		});
 
 		for (const item of items) {
 			Object.defineProperty(this, item, {
@@ -15,15 +20,15 @@ class EnumBase<T extends string> implements Iterable<T> {
 	}
 
 	public is(value: string): value is T {
-		return this.#variants.has(value);
+		return this.variants.has(value);
 	}
 
 	public toString(): string {
-		return `Enum<${Array.from(this.#variants).join(' | ')}>`;
+		return `Enum<${Array.from(this.variants).join(' | ')}>`;
 	}
 
 	public [Symbol.iterator](): Iterator<T> {
-		return this.#variants.values() as Iterator<T>;
+		return this.variants.values() as Iterator<T>;
 	}
 }
 
