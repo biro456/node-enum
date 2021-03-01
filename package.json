@@ -5,6 +5,7 @@
 	"license": "MIT",
 	"author": {
 		"name": "Leandro Aguiar",
+		"email": "me@biro456.dev",
 		"url": "https://biro456.dev"
 	},
 	"homepage": "https://github.com/biro456/node-enum",
