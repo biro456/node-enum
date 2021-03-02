@@ -28,7 +28,7 @@
 		"build": "tsc -p tsconfig.build.json",
 		"postbuild": "babel build/import/ -d build/require/ -s",
 		"lint": "eslint --ext .ts .",
-		"test": "jest -c .jestrc.json",
+		"test": "jest",
 		"release": "standard-version"
 	},
 	"type": "module",
