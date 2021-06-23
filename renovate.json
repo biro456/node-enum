@@ -1,0 +1,9 @@
+{
+	"extends": [
+		":preserveSemverRanges",
+		"group:all",
+		"group:monorepos",
+		":disableMajorUpdates",
+		":maintainLockFilesWeekly"
+	]
+}
