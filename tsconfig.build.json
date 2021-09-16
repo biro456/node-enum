@@ -3,10 +3,17 @@
 	"compilerOptions": {
 		"noEmit": false,
 
-		"outDir": "build/import/",
+		"incremental": true,
+		"tsBuildInfoFile": "build/tsbuildinfo.json",
+
+		"outDir": "build/",
 	},
+	"include": [
+		"src/"
+	],
 	"exclude": [
 		"build/",
+		"dist/",
 		"node_modules/",
 		"src/**/*.spec.ts"
 	]
