@@ -34,7 +34,9 @@ jobs:
     - name: Run Jest
       run: pnpm --silent test
     - name: Publish JUnit Results
-      uses: mikepenz/action-junit-report@v3
+      uses: dorny/test-reporter@v1
       if: always()
       with:
-        report_paths: test-results/junit/*.xml
+        name: Jest Tests
+        path: test-results/junit/*.xml
+        format: jest-junit
