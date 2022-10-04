@@ -38,5 +38,5 @@ jobs:
       if: always()
       with:
         name: Jest Tests
+        reporter: jest-junit
         path: test-results/junit/*.xml
-        format: jest-junit
