@@ -7,7 +7,6 @@
 
 # Build artifacts
 /build
-/dist
 
 # Logs
 *.log

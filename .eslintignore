@@ -3,7 +3,3 @@
 
 # Build artifacts
 /build
-/dist
-
-# Tasks
-/tasks

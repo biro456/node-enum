@@ -1,11 +1,6 @@
 {
 	"extends": "./tsconfig.json",
 	"compilerOptions": {
-		"noEmit": false,
-
-		"incremental": true,
-		"tsBuildInfoFile": "build/tsbuildinfo.json",
-
 		"outDir": "build/",
 	},
 	"include": [
@@ -13,8 +8,7 @@
 	],
 	"exclude": [
 		"build/",
-		"dist/",
 		"node_modules/",
-		"src/**/*.spec.ts"
+		"test/",
 	]
 }

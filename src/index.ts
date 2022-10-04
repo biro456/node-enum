@@ -1,1 +1,1 @@
-export * from './enum-basic';
+export * from './enum-basic.js';

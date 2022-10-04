@@ -2,17 +2,22 @@
 	"testRunner": "jest-circus/runner",
 	"testEnvironment": "node",
 	"roots": [
-		"src/"
+		"test/"
 	],
 	"testRegex": ".+\\.spec\\.ts$",
+	"extensionsToTreatAsEsm": [
+		".ts"
+	],
+	"moduleNameMapper": {
+	  "^(\\.{1,2}/.*)\\.js$": "$1"
+	},
 	"transform": {
-		"^.+\\.ts$": "ts-jest"
+		"^.+\\.[jt]s$": "ts-jest"
 	},
 	"injectGlobals": false,
 	"collectCoverage": true,
 	"collectCoverageFrom": [
-		"src/**/*.ts",
-		"!src/**/*.spec.ts"
+		"src/**/*.ts"
 	],
 	"coverageReporters": [
 		"text-summary"
