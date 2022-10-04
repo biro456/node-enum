@@ -33,10 +33,4 @@ jobs:
     - uses: ./.github/actions/setup-env
     - name: Run Jest
       run: pnpm --silent test
-    - name: Publish JUnit Results
-      uses: dorny/test-reporter@v1
-      if: always()
-      with:
-        name: Jest Tests
-        reporter: jest-junit
-        path: test-results/junit/*.xml
+    - uses: ./.github/actions/publish-test-results
