@@ -5,22 +5,20 @@ on:
 
 jobs:
   build:
+    name: Build TypeScript
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - uses: ./.github/actions/setup-env
-      with:
-        node-version: 18
     - name: Run TypeScript Compiler
       run: pnpm build
   lint:
+    name: Check ESLint
     runs-on: ubuntu-latest
     needs: build
     steps:
     - uses: actions/checkout@v3
     - uses: ./.github/actions/setup-env
-      with:
-        node-version: 18
     - name: Run ESLint
       run: pnpm --silent lint
     # - name: Publish JUnit Results
@@ -29,12 +27,11 @@ jobs:
     #   with:
     #     report_paths: test-results/**.junit.xml
   test:
+    name: Check Jest
     runs-on: ubuntu-latest
     needs: build
     steps:
     - uses: actions/checkout@v3
     - uses: ./.github/actions/setup-env
-      with:
-        node-version: 18
     - name: Run Jest
       run: pnpm --silent test
