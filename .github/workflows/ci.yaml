@@ -34,3 +34,4 @@ jobs:
     - name: Run Jest
       run: pnpm --silent test
     - uses: ./.github/actions/publish-test-results
+      if: always()

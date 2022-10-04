@@ -5,7 +5,6 @@ runs:
   steps:
   - name: Publish JUnit Results
     uses: dorny/test-reporter@v1
-    if: always()
     with:
       name: Jest Test Results
       reporter: jest-junit
