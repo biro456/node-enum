@@ -1,6 +1,6 @@
 import { beforeAll, describe, expect, it } from '@jest/globals';
 
-import { Enum } from './enum';
+import { Enum } from '../src/enum.js';
 
 describe('Enum', () => {
 	it('is called Enum', () => {

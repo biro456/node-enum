@@ -1,13 +1,14 @@
 {
 	"extends": "./tsconfig.json",
 	"compilerOptions": {
-		"noEmit": false,
-
-		"outDir": "build/import/",
+		"outDir": "build/",
 	},
+	"include": [
+		"src/"
+	],
 	"exclude": [
 		"build/",
 		"node_modules/",
-		"src/**/*.spec.ts"
+		"test/",
 	]
 }

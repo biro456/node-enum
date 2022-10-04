@@ -1,10 +1,11 @@
 {
 	"name": "@biro456/enum",
 	"version": "0.0.0",
-	"description": "A typed enum for TypeScript",
+	"description": "A typed enum for TypeScript (or not)",
 	"license": "MIT",
 	"author": {
 		"name": "Leandro Aguiar",
+		"email": "me@biro456.dev",
 		"url": "https://biro456.dev"
 	},
 	"homepage": "https://github.com/biro456/node-enum",
@@ -12,48 +13,44 @@
 		"type": "git",
 		"url": "https://github.com/biro456/node-enum"
 	},
-    "bugs": {
-        "url": "https://github.com/biro456/node-enum/issues"
-    },
+	"bugs": {
+		"url": "https://github.com/biro456/node-enum/issues"
+	},
 	"keywords": [
 		"enum",
 		"typescript"
 	],
+	"packageManager": "pnpm@7.13.0",
 	"engines": {
-		"node": ">=8"
+		"node": ">=16"
 	},
 	"scripts": {
-		"clean": "rimraf -rf .tsc/ build/",
 		"build": "tsc -p tsconfig.build.json",
-		"postbuild": "babel build/import/ -d build/require/ -s",
 		"lint": "eslint --ext .ts .",
-		"test": "jest -c .jestrc.json",
+		"test": "jest",
 		"release": "standard-version"
 	},
 	"type": "module",
-	"main": "./build/import/enum.mjs",
+	"main": "./build/index.js",
+	"types": "./build/index.d.ts",
 	"exports": {
-		"import": "./build/import/enum.mjs",
-		"require": "./build/require/enum.cjs"
+		"types": "./build/index.d.ts",
+		"import": "./build/index.js"
 	},
 	"files": [
 		"./build/"
 	],
 	"devDependencies": {
-		"@babel/cli": "^7.13.0",
-		"@babel/core": "^7.13.8",
-		"@babel/plugin-transform-modules-commonjs": "^7.13.8",
-		"@jest/globals": "^26.6.2",
-		"@typescript-eslint/eslint-plugin": "^4.15.2",
-		"@typescript-eslint/parser": "^4.15.2",
-		"eslint": "^7.21.0",
-		"eslint-import-resolver-typescript": "^2.4.0",
-		"eslint-plugin-import": "^2.22.1",
-		"jest": "^26.6.3",
-		"jest-circus": "^26.6.3",
-		"rimraf": "^3.0.2",
-		"standard-version": "^9.1.0",
-		"ts-jest": "^26.5.2",
-		"typescript": "~4.3.0"
+		"@jest/globals": "~29.1.2",
+		"@typescript-eslint/eslint-plugin": "~5.39.0",
+		"@typescript-eslint/parser": "~5.39.0",
+		"eslint": "~8.24.0",
+		"eslint-import-resolver-typescript": "~3.5.1",
+		"eslint-plugin-import": "~2.26.0",
+		"jest": "~29.1.2",
+		"jest-circus": "~29.1.2",
+		"standard-version": "~9.5.0",
+		"ts-jest": "~29.0.3",
+		"typescript": "~4.8.4"
 	}
 }
