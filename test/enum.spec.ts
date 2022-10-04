@@ -3,11 +3,13 @@ import { beforeAll, describe, expect, it } from '@jest/globals';
 import { Enum } from '../src/enum.js';
 
 describe('Enum', () => {
-	it('is called Enum', () => {
-		expect(Enum.name).toBe('Enum');
+	describe('class', () => {
+		it('is called Enum', () => {
+			expect(Enum.name).toBe('Enum');
+		});
 	});
 
-	describe('', () => {
+	describe('instance', () => {
 		type MyEnum = typeof MyEnum;
 		let MyEnum: Enum<'First' | 'Second'>;
 
@@ -50,6 +52,7 @@ describe('Enum', () => {
 			expect(Object.entries(MyEnum)).toEqual([
 				['First', 'First'],
 				['Second', 'Second'],
+				['Third', 'Third'],
 			]);
 		});
 	});

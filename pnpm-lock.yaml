@@ -9,6 +9,7 @@ specifiers:
   eslint-plugin-import: ~2.26.0
   jest: ~29.1.2
   jest-circus: ~29.1.2
+  jest-junit: ~14.0.1
   standard-version: ~9.5.0
   ts-jest: ~29.0.3
   typescript: ~4.8.4
@@ -22,6 +23,7 @@ devDependencies:
   eslint-plugin-import: 2.26.0_s4vppe3rjapx4e2z54qvzpm5hu
   jest: 29.1.2
   jest-circus: 29.1.2
+  jest-junit: 14.0.1
   standard-version: 9.5.0
   ts-jest: 29.0.3_2gcdg7c5hzdfd67o3khlosdlhu
   typescript: 4.8.4
@@ -584,7 +586,7 @@ packages:
       jest-worker: 29.1.2
       slash: 3.0.0
       string-length: 4.0.2
-      strip-ansi: 6.0.0
+      strip-ansi: 6.0.1
       terminal-link: 2.1.1
       v8-to-istanbul: 9.0.1
     transitivePeerDependencies:
@@ -2850,6 +2852,16 @@ packages:
       fsevents: 2.3.2
     dev: true
 
+  /jest-junit/14.0.1:
+    resolution: {integrity: sha512-h7/wwzPbllgpQhhVcRzRC76/cc89GlazThoV1fDxcALkf26IIlRsu/AcTG64f4nR2WPE3Cbd+i/sVf+NCUHrWQ==}
+    engines: {node: '>=10.12.0'}
+    dependencies:
+      mkdirp: 1.0.4
+      strip-ansi: 6.0.1
+      uuid: 8.3.2
+      xml: 1.0.1
+    dev: true
+
   /jest-leak-detector/29.1.2:
     resolution: {integrity: sha512-TG5gAZJpgmZtjb6oWxBLf2N6CfQ73iwCe6cofu/Uqv9iiAm6g502CAnGtxQaTfpHECBdVEMRBhomSXeLnoKjiQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -3356,6 +3368,12 @@ packages:
 
   /minimist/1.2.6:
     resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
+    dev: true
+
+  /mkdirp/1.0.4:
+    resolution: {integrity: sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==}
+    engines: {node: '>=10'}
+    hasBin: true
     dev: true
 
   /modify-values/1.0.1:
@@ -4004,7 +4022,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       char-regex: 1.0.2
-      strip-ansi: 6.0.0
+      strip-ansi: 6.0.1
     dev: true
 
   /string-width/4.2.2:
@@ -4013,7 +4031,7 @@ packages:
     dependencies:
       emoji-regex: 8.0.0
       is-fullwidth-code-point: 3.0.0
-      strip-ansi: 6.0.0
+      strip-ansi: 6.0.1
     dev: true
 
   /string-width/4.2.3:
@@ -4350,6 +4368,11 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
+  /uuid/8.3.2:
+    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    hasBin: true
+    dev: true
+
   /v8-to-istanbul/9.0.1:
     resolution: {integrity: sha512-74Y4LqY74kLE6IFyIjPtkSTWzUZmj8tdHT9Ii/26dvQ6K9Dl2NbEfj0XgU2sHCtKgt5VupqhlO/5aWuqS+IY1w==}
     engines: {node: '>=10.12.0'}
@@ -4405,7 +4428,7 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       string-width: 4.2.2
-      strip-ansi: 6.0.0
+      strip-ansi: 6.0.1
     dev: true
 
   /wrappy/1.0.2:
@@ -4418,6 +4441,10 @@ packages:
     dependencies:
       imurmurhash: 0.1.4
       signal-exit: 3.0.7
+    dev: true
+
+  /xml/1.0.1:
+    resolution: {integrity: sha512-huCv9IH9Tcf95zuYCsQraZtWnJvBtLVE0QHMOs8bWyZAFZNDcYjsPq1nEx8jKA9y+Beo9v+7OBPRisQTjinQMw==}
     dev: true
 
   /xtend/4.0.2:
