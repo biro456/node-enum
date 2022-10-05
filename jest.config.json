@@ -9,12 +9,26 @@
 		".ts"
 	],
 	"moduleNameMapper": {
-	  "^(\\.{1,2}/.*)\\.js$": "$1"
+		"^(\\.{1,2}/.*)\\.js$": "$1"
 	},
 	"transform": {
 		"^.+\\.[jt]s$": "ts-jest"
 	},
 	"injectGlobals": false,
+	"reporters": [
+		"default",
+		[
+			"jest-junit",
+			{
+				"outputDirectory": "test-results/junit",
+				"outputName": "jest.xml",
+				"classNameTemplate": "{classname}",
+				"titleTemplate": "{title}",
+				"ancestorSeparator": " ",
+				"usePathForSuiteName": "true"
+			}
+		]
+	],
 	"collectCoverage": true,
 	"collectCoverageFrom": [
 		"src/**/*.ts"

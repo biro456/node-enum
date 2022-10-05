@@ -8,5 +8,8 @@
 # Build artifacts
 /build
 
+# Test Results
+/test-results
+
 # Logs
 *.log
