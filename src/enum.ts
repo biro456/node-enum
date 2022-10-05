@@ -40,7 +40,7 @@ Object.defineProperty(EnumBase, 'name', {
 });
 
 type EnumVariants<T extends string> = {
-	readonly [V in T]: V;
+readonly [V in T]: V;
 };
 
 export const Enum = EnumBase as new <T extends string>(items: T[]) => EnumBase<T> & EnumVariants<T>;

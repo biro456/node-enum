@@ -26,7 +26,7 @@
 	},
 	"scripts": {
 		"build": "tsc -p tsconfig.build.json",
-		"lint": "eslint --ext .ts .",
+		"lint": "eslint -f @microsoft/sarif -o test-results/sarif/eslint.sarif --ext .ts .",
 		"test": "jest",
 		"release": "standard-version"
 	},
@@ -42,6 +42,7 @@
 	],
 	"devDependencies": {
 		"@jest/globals": "~29.1.2",
+		"@microsoft/eslint-formatter-sarif": "~3.0.0",
 		"@typescript-eslint/eslint-plugin": "~5.39.0",
 		"@typescript-eslint/parser": "~5.39.0",
 		"eslint": "~8.24.0",

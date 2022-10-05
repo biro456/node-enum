@@ -29,5 +29,11 @@
 				"project": "tsconfig.json"
 			}
 		}
+	},
+	"rules": {
+		"@typescript-eslint/indent": [
+			"warn",
+			"tab"
+		]
 	}
 }

@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@jest/globals': ~29.1.2
+  '@microsoft/eslint-formatter-sarif': ~3.0.0
   '@typescript-eslint/eslint-plugin': ~5.39.0
   '@typescript-eslint/parser': ~5.39.0
   eslint: ~8.24.0
@@ -16,6 +17,7 @@ specifiers:
 
 devDependencies:
   '@jest/globals': 29.1.2
+  '@microsoft/eslint-formatter-sarif': 3.0.0
   '@typescript-eslint/eslint-plugin': 5.39.0_xyciw6oqjoiiono4dhv3uhn5my
   '@typescript-eslint/parser': 5.39.0_ypn2ylkkyfa5i233caldtndbqa
   eslint: 8.24.0
@@ -678,6 +680,18 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
+    dev: true
+
+  /@microsoft/eslint-formatter-sarif/3.0.0:
+    resolution: {integrity: sha512-KIKkT44hEqCzqxODYwFMUvYEK0CrdHx/Ll9xiOWgFbBSRuzbxmVy4d/tzfgoucGz72HJZNOMjuyzFTBKntRK5Q==}
+    engines: {node: '>= 14'}
+    dependencies:
+      eslint: 8.24.0
+      jschardet: 3.0.0
+      lodash: 4.17.21
+      utf8: 3.0.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
@@ -3128,6 +3142,11 @@ packages:
       argparse: 2.0.1
     dev: true
 
+  /jschardet/3.0.0:
+    resolution: {integrity: sha512-lJH6tJ77V8Nzd5QWRkFYCLc13a3vADkh3r/Fi8HupZGWk2OVVDfnZP8V/VgQgZ+lzW0kG2UGb5hFgt3V3ndotQ==}
+    engines: {node: '>=0.1.90'}
+    dev: true
+
   /jsesc/2.5.2:
     resolution: {integrity: sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==}
     engines: {node: '>=4'}
@@ -4362,6 +4381,10 @@ packages:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
       punycode: 2.1.1
+    dev: true
+
+  /utf8/3.0.0:
+    resolution: {integrity: sha512-E8VjFIQ/TyQgp+TZfS6l8yp/xWppSAHzidGiRrqe4bK4XP9pTRyKFgGJpO3SN7zdX4DeomTrwaseCHovfpFcqQ==}
     dev: true
 
   /util-deprecate/1.0.2:
