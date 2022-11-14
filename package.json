@@ -20,7 +20,7 @@
 		"enum",
 		"typescript"
 	],
-	"packageManager": "pnpm@7.14.0",
+	"packageManager": "pnpm@7.16.0",
 	"engines": {
 		"node": ">=16"
 	},
@@ -44,7 +44,7 @@
 		"@jest/globals": "~29.3.0",
 		"@typescript-eslint/eslint-plugin": "~5.42.0",
 		"@typescript-eslint/parser": "~5.42.0",
-		"eslint": "~8.26.0",
+		"eslint": "~8.27.0",
 		"eslint-import-resolver-typescript": "~3.5.1",
 		"eslint-plugin-import": "~2.26.0",
 		"jest": "~29.3.0",
