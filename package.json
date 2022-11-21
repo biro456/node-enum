@@ -20,7 +20,7 @@
 		"enum",
 		"typescript"
 	],
-	"packageManager": "pnpm@7.16.1",
+	"packageManager": "pnpm@7.17.0",
 	"engines": {
 		"node": ">=16"
 	},
