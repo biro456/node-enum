@@ -5,5 +5,6 @@
 		"group:monorepos",
 		":disableMajorUpdates",
 		":maintainLockFilesWeekly"
-	]
+	],
+	"stabilityDays": 14
 }
